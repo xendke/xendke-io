@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Grid, Divider } from 'semantic-ui-react';
-import { AboutMe, Education, Links } from './components/Cards';
+import { AboutMe, Education, Links, Experience } from './components/Cards';
 import TopSegment from './components/TopSegment.jsx';
 
 class App extends Component {
@@ -12,14 +12,14 @@ class App extends Component {
       <Divider horizontal>xendke.io</Divider>
       <Grid columns={2} stackable padded>
         <Grid.Row streched >
-          <Grid.Column >
+          <Grid.Column>
             <AboutMe/>
             <Links/>
           </Grid.Column>
 
-          <Grid.Column streched>
+          <Grid.Column>
             <Education/>
-            <Education />
+            <Experience />
           </Grid.Column>
 
         </Grid.Row >
