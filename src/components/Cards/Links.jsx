@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card.jsx';
-import { Segment, Icon, Grid, Container } from 'semantic-ui-react';
+import { Segment, Icon, Grid, Container, Popup } from 'semantic-ui-react';
 
 
 const linkStyle = {
@@ -8,27 +8,40 @@ const linkStyle = {
     color: "black"
 };
 
+class Link extends Component {
+    render () {
+        return (
+            <Popup
+                trigger={
+                    <a target="_blank" rel="noopener noreferrer" href={this.props.href} style={linkStyle}>
+                    <Icon name={this.props.icon} size='big' circular/>
+                    </a>
+                }
+                content={this.props.title}
+                size="small"
+                position='bottom center'
+                verticalOffset={17}
+                horizontalOffset={2}
+            />
+        )
+    }
+}
+
 class Links extends Component {
     render() {
         return (
-            <Card title="Links" icon="external link alternate" >
+            <Card title="Links" icon="linkify" >
                 <Segment attached>
                 <Container textAlign='center'>
                 <Grid columns={3} padded>
                     <Grid.Column>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/xendke" style={linkStyle}>
-                    <Icon name='github' size='big' circular/>
-                    </a>
+                        <Link icon="github" title="GitHub" href="https://www.github.com/xendke"/>
                     </Grid.Column>
                     <Grid.Column>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/juanxgomez" style={linkStyle}>
-                    <Icon name='linkedin' size='big' circular/>
-                    </a>
+                        <Link icon="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/juanxgomez"/>
                     </Grid.Column>
                     <Grid.Column>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/xendke" style={linkStyle}>
-                    <Icon name='twitter' size='big' circular/>
-                    </a>
+                        <Link icon="twitter" title="Twitter" href="https://www.twitter.com/xendke"/>
                     </Grid.Column>
                 </Grid>
                 </Container>
