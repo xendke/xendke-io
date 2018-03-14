@@ -27,6 +27,10 @@ class App extends Component {
             </Grid.Row >
           </Grid>
         </Container>
+        <Divider/>
+        <Container textAlign='center' style={{paddingBottom: 15, color: "grey"}}>
+          <a href="https://github.com/xendke/xendke-io" target="_blank" rel="noopener noreferrer" style={{color: "grey"}}> Made with React.js </a>. Hosted on a RaspberryPi
+        </Container>
       </div>
     );
   }
