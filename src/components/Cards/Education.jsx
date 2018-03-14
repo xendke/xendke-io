@@ -1,27 +1,24 @@
 import React, { Component } from 'react';
 import Card from './Card.jsx';
-import { List } from 'semantic-ui-react';
+import { Item } from 'semantic-ui-react';
 
-const dateStyle = {
-    fontStyle: "italic"
-};
 
 class Education extends Component {
     render() {
         return (
             <Card title="Education" icon="student">
-                <List size="medium">
-                    <List.Item>
-                    <List.Header>State University of NY at Purchase.</List.Header>
-                    <List.Content>
-                    <List>
-                        <List.Item style={dateStyle}>From September 2014 to May 2018.</List.Item>
-                        <List.Item>B.A. Computer Science and Mathematics with Minor in Economics</List.Item>
-                        <List.Item>3.6 GPA</List.Item>
-                    </List>
-                    </List.Content>
-                    </List.Item>
-                </List>
+            <Item.Group divided>
+                <Item>
+                    <Item.Content>
+                        <Item.Header size="small">State University of NY at Purchase</Item.Header>
+                        <Item.Meta>September 2014 - May 2018.</Item.Meta>
+                        <Item.Description>
+                        B.A. Computer Science and Mathematics with Economics Minor
+                        </Item.Description>
+                        <Item.Extra>3.6 GPA</Item.Extra>
+                    </Item.Content>
+                </Item>
+            </Item.Group>
             </Card>
         )
     }
