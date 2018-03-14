@@ -1,24 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Grid } from 'semantic-ui-react';
+import { Grid, Divider } from 'semantic-ui-react';
 import { AboutMe, Education, Links } from './components/Cards';
+import TopSegment from './components/TopSegment.jsx';
 
 class App extends Component {
   render() {
     return (
       <div className="App">  
-      <Grid columns={2} padded stackable >
-      <Grid.Row streched>
-        <Grid.Column >
-          <AboutMe/>
-          <Links/>
-        </Grid.Column>
+      <TopSegment/>
+      <Divider horizontal>xendke.io</Divider>
+      <Grid columns={2} stackable padded>
+        <Grid.Row streched >
+          <Grid.Column >
+            <AboutMe/>
+            <Links/>
+          </Grid.Column>
 
-        <Grid.Column >
-          <Education/>
-          <Education/>
-        </Grid.Column>
-      </Grid.Row>
+          <Grid.Column streched>
+            <Education/>
+            <Education />
+          </Grid.Column>
+
+        </Grid.Row >
       </Grid>
       </div>
     );
