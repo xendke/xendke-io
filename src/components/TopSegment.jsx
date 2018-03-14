@@ -18,7 +18,6 @@ class TopSegment extends Component {
                     <List.Item icon='marker' content='White Plains, NY' />
                     <List.Item icon='phone' content='(914) 565-1708' />
                     <List.Item icon='mail' content={<a href='mailto:me@xendke.io'>me@xendke.io</a>} />
-                    {/* <List.Item icon='linkify' content={<a href='http://www.xendke.io'>xendke.io</a>} /> */}
                 </List>
                 </Container>
             </Grid.Column>

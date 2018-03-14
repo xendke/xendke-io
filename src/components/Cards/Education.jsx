@@ -11,7 +11,7 @@ class Education extends Component {
         return (
             <Card title="Education" icon="student">
                 <Segment attached>
-                <List>
+                <List size="medium">
                     <List.Item>
                     <List.Header>State University of NY at Purchase.</List.Header>
                     <List.Content>
