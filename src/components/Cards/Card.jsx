@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header } from 'semantic-ui-react';
+import { Header, Segment } from 'semantic-ui-react';
 
 
 class Card extends Component {
@@ -7,7 +7,9 @@ class Card extends Component {
         return (
             <React.Fragment>
                 <Header as='h2' icon={this.props.icon} content={this.props.title} attached='top'/>
-                {this.props.children}
+                <Segment attached>
+                    {this.props.children}
+                </Segment>
             </React.Fragment>
         )
     }

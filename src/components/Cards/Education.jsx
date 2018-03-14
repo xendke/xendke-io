@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card.jsx';
-import { Segment, List } from 'semantic-ui-react';
+import { List } from 'semantic-ui-react';
 
 const dateStyle = {
     fontStyle: "italic"
@@ -10,7 +10,6 @@ class Education extends Component {
     render() {
         return (
             <Card title="Education" icon="student">
-                <Segment attached>
                 <List size="medium">
                     <List.Item>
                     <List.Header>State University of NY at Purchase.</List.Header>
@@ -23,7 +22,6 @@ class Education extends Component {
                     </List.Content>
                     </List.Item>
                 </List>
-                </Segment>
             </Card>
         )
     }

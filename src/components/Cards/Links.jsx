@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card.jsx';
-import { Segment, Icon, Grid, Container, Popup } from 'semantic-ui-react';
+import { Icon, Grid, Container, Popup } from 'semantic-ui-react';
 
 
 const linkStyle = {
@@ -31,7 +31,6 @@ class Links extends Component {
     render() {
         return (
             <Card title="Links" icon="linkify" >
-                <Segment attached>
                 <Container textAlign='center'>
                 <Grid columns={3} padded>
                     <Grid.Column>
@@ -45,7 +44,6 @@ class Links extends Component {
                     </Grid.Column>
                 </Grid>
                 </Container>
-                </Segment>
             </Card>
         )
     }

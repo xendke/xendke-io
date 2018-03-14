@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import Card from './Card.jsx';
-import { Segment, Item } from 'semantic-ui-react';
+import { Item } from 'semantic-ui-react';
 
 class Experience extends Component {
     render() {
         return (
             <Card title="Experience" icon="history">
-                <Segment attached>
                 <Item.Group divided>
                 <Item>
                 {/* <Item.Image size='tiny' src='/assets/images/wireframe/image.png' /> */}
@@ -31,7 +30,6 @@ class Experience extends Component {
                     </Item.Content>
                 </Item>
                 </Item.Group>
-                </Segment>
             </Card>
         )
     }
