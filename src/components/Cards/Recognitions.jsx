@@ -19,7 +19,9 @@ class Recognitions extends Component {
                 </Item>
                 <Item>
                     <Item.Content>
-                        <Item.Header size="small" as='a' href="https://devpost.com/software/candybot-j3pwk0">GlobalAI Hackathon Winner</Item.Header>
+                        <Item.Header size="small" as='a' href="https://devpost.com/software/candybot-j3pwk0" target="_blank" rel="noopener noreferrer">
+                            GlobalAI Hackathon Winner
+                        </Item.Header>
                         {/* <Item.Meta></Item.Meta> */}
                         <Item.Description>
                         My group's project "CandyBot" won the title of "Best Emotional AI Hack" at NYC's GlobalAI Hackathon.
