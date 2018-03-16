@@ -32,7 +32,7 @@ class Links extends Component {
         return (
             <Card title="Links" icon="linkify" >
                 <Container textAlign='center'>
-                <Grid columns={3} padded>
+                <Grid columns={4} padded>
                     <Grid.Column>
                         <Link icon="github" title="GitHub" href="https://www.github.com/xendke"/>
                     </Grid.Column>
@@ -41,6 +41,9 @@ class Links extends Component {
                     </Grid.Column>
                     <Grid.Column>
                         <Link icon="twitter" title="Twitter" href="https://www.twitter.com/xendke"/>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Link icon="code" title="HackerRank" href="https://www.hackerrank.com/xendke"/>
                     </Grid.Column>
                 </Grid>
                 </Container>
