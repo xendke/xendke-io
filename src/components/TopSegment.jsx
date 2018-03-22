@@ -12,7 +12,7 @@ class TopSegment extends Component {
             <Grid.Column verticalAlign="middle">
                 <Container textAlign="left">
                 <List>
-                    <List.Item icon='user'> 
+                    <List.Item> 
                         <Responsive as="h2" minWidth={759}>
                             Juan X. Gomez
                         </Responsive>
