@@ -4,6 +4,7 @@ import { Divider, Container, Menu } from 'semantic-ui-react';
 import TopSegment from './components/TopSegment.jsx';
 import Resume from './components/Resume.jsx';
 import Projects from './components/Projects.jsx';
+import Feeds from './components/Feeds.jsx';
 
 
 class App extends Component {
@@ -14,13 +15,13 @@ class App extends Component {
   constructor() {
     super();
     // resume is the only page visible
-    this.visibilities = {resume: {display: "none"}, projects: {display: "none"}, thoughts: {display: "none"}};
+    this.visibilities = {resume: {display: "none"}, projects: {display: "none"}, feeds: {display: "none"}};
     this.visibilities[this.state.activePage].display = "block";
   }
 
   componentWillUpdate(nextProps, nextState) {
     // reset the visibilities to none
-    this.visibilities = {resume: {display: "none"}, projects: {display: "none"}, thoughts: {display: "none"}};
+    this.visibilities = {resume: {display: "none"}, projects: {display: "none"}, feeds: {display: "none"}};
     const { activePage } = nextState;
     // make the soon to be active page visible
     this.visibilities[activePage].display = "block";
@@ -37,12 +38,14 @@ class App extends Component {
           <Menu widths={3}>
             <Menu.Item name="resume" active={activePage === "resume"} onClick={this.handleItemClick} />
             <Menu.Item name="projects" active={activePage === "projects"} onClick={this.handleItemClick} />
-            <Menu.Item name="thoughts" active={activePage === "thoughts"} onClick={this.handleItemClick} />
+            <Menu.Item name="feeds" active={activePage === "feeds"} onClick={this.handleItemClick} />
           </Menu>
 
           <Resume visibility={this.visibilities.resume}/>
 
-          <Projects visibility={this.visibilities.projects}/>          
+          <Projects visibility={this.visibilities.projects}/>
+
+          <Feeds visibility={this.visibilities.feeds}/>       
 
         </Container>
         <Divider/>
