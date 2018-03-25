@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import { Container, Grid } from 'semantic-ui-react';
+import { Grid, Dimmer, Loader } from 'semantic-ui-react';
 import "./Feeds.css";
 
 class Feeds extends Component {
+    state = {
+        loading: true
+    }
+
     componentDidMount() {
         // set up twitter and github feed widgets
         const twitter = document.createElement('script');
@@ -18,24 +22,28 @@ class Feeds extends Component {
             selector: "#github-widget-container",
             limit: 20 
         });
+        setTimeout(() => { // can't find a hook for twitter widget load
+            this.setState({ loading: false });
+        }, 1500);
     }
 
     render() {
-        console.log("feeds rendered");
+        const { loading }  = this.state;
         return (
-            <Container style={this.props.visibility}>
-                <Grid columns={2} padded stackable>
-                <Grid.Row>
-                    <Grid.Column >
-                        <div id="github-widget-container">
-                        </div>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <a className="twitter-timeline" href="https://twitter.com/xendke?ref_src=twsrc%5Etfw" data-height="410">Tweets by xendke</a> 
-                    </Grid.Column>
-                 </Grid.Row>
-                </Grid>
-            </Container>
+            <Grid columns={2} padded stackable>
+            <Grid.Row>
+                <Dimmer active={loading} inverted>
+                    <Loader inverted>Loading Feeds</Loader>
+                </Dimmer>
+                <Grid.Column >
+                    <div id="github-widget-container">
+                    </div>
+                </Grid.Column>
+                <Grid.Column>
+                    <a className="twitter-timeline" href="https://twitter.com/xendke?ref_src=twsrc%5Etfw" data-height="410">Tweets by xendke</a> 
+                </Grid.Column>
+                </Grid.Row>
+            </Grid>
         );
     }
 }

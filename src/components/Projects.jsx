@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Card, Icon, Container } from 'semantic-ui-react';
+import { Card, Icon } from 'semantic-ui-react';
 
 
 class Projects extends Component {
     render() {
         return (
-        <Container style={this.props.visibility} >
         <Card.Group style={{padding: 15}} itemsPerRow={3} doubling stackable centered>
             <Card target="_blank" rel="noopener noreferrer" href='https://github.com/xendke/digitaizer' fluid>
                 <Card.Content>
@@ -71,7 +70,6 @@ class Projects extends Component {
                 </Card.Content>
             </Card>
         </Card.Group>
-        </Container>
         );
     }
 }

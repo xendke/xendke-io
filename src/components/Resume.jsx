@@ -6,7 +6,7 @@ class Resume extends Component {
 
   render() {
     return (
-        <Grid style={this.props.visibility} columns={2} stackable padded>
+        <Grid columns={2} stackable padded>
         <Grid.Row stretched>
             <Grid.Column>
                 <AboutMe/>
