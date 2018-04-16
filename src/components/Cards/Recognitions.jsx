@@ -9,6 +9,16 @@ class Recognitions extends Component {
                 <Item.Group divided>
                 <Item>
                     <Item.Content>
+                        <Item.Header size="small">Award for Outstanding Senior in Computer Science</Item.Header>
+                        {/* <Item.Meta></Item.Meta> */}
+                        <Item.Description>
+                        This award is presented to a highly-respected Math/Computer Science senior with a strong academic record.
+                        </Item.Description>
+                        <Item.Extra>2018</Item.Extra>
+                    </Item.Content>
+                </Item>
+                <Item>
+                    <Item.Content>
                         <Item.Header size="small">Dean's List</Item.Header>
                         {/* <Item.Meta></Item.Meta> */}
                         <Item.Description>

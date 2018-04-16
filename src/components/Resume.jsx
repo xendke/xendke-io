@@ -7,7 +7,7 @@ class Resume extends Component {
   render() {
     return (
         <Grid columns={2} stackable padded>
-        <Grid.Row stretched>
+        <Grid.Row>
             <Grid.Column>
                 <AboutMe/>
                 <Experience/>
