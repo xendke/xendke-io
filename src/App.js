@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Divider, Container, Menu } from 'semantic-ui-react';
+import { Divider, Container, Menu, Button } from 'semantic-ui-react';
 import { TopSegment, Resume, Projects, Feeds } from './components';
 
 
 class App extends Component {
-  state = { activePage: "resume" }
+  state = { activePage: "resume" , darkMode: false}
 
   handleItemClick = (e, { name }) => this.setState({ activePage: name })
+
+  handleDarkModeClick = (e) => this.setState({ darkMode: !this.state.darkMode })
 
   render() {
     const { activePage } = this.state;
 
     return (
       <div className="App">  
-        <TopSegment/>
+        <TopSegment>
+          <Button basic onClick={this.handleDarkModeClick}>{this.state.darkMode ? "Lights On" : "Dark Mode" }</Button>
+          { this.state.darkMode ? <link rel="stylesheet" type="text/css" href="./semantic.slate.css" /> : null}
+        </TopSegment>
         <Divider horizontal>xendke.io</Divider>
         <Container>
           <Menu widths={3}>
