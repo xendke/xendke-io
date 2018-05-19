@@ -15,7 +15,7 @@ class Education extends Component {
                         <Item.Description>
                         B.A. Computer Science and Mathematics with Economics Minor
                         </Item.Description>
-                        <Item.Extra>3.6 GPA</Item.Extra>
+                        <Item.Extra>Graduated Cum Laude - 3.6/4.0 GPA</Item.Extra>
                     </Item.Content>
                 </Item>
             </Item.Group>
