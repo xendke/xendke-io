@@ -69,6 +69,16 @@ class Projects extends Component {
                     React.js, SemanticUI, Nginx
                 </Card.Content>
             </Card>
+            <Card target="_blank" rel="noopener noreferrer" href='https://www.xendke.io/pet-or-not/' fluid>
+                <Card.Content>
+                    <Card.Header>pet or not</Card.Header>
+                    <Card.Description>Image recognition web application for detecting your beloved pets.</Card.Description>
+                </Card.Content>
+                <Card.Content extra>
+                    <Icon name='code' />
+                    React.js, Bootstrap4, Clarifai
+                </Card.Content>
+            </Card>
         </Card.Group>
         );
     }
