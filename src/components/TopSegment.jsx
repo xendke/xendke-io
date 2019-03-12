@@ -14,7 +14,7 @@ class TopSegment extends Component {
                 <Grid.Column verticalAlign="middle">
                     <Container textAlign="left">
                     <List>
-                        <List.Item> 
+                        <List.Item>
                             <Responsive as="h2" minWidth={759}>
                                 Juan X. Gomez
                             </Responsive>
@@ -24,7 +24,7 @@ class TopSegment extends Component {
                         </List.Item>
                         <List.Item icon='marker' content='White Plains, NY' />
                         <List.Item icon='phone' content='(914) 565-1708' />
-                        <List.Item icon='mail' content={<a href='mailto:me@xendke.io'>me@xendke.io</a>} />
+                        <List.Item icon='mail' content={<a href='mailto:xendke@gmail.com'>xendke@gmail.com</a>} />
                     </List>
                     </Container>
                 </Grid.Column>

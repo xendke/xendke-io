@@ -15,12 +15,12 @@ class App extends Component {
     const { activePage } = this.state;
 
     return (
-      <div className="App">  
+      <div className="App">
         <TopSegment>
           <Button basic onClick={this.handleDarkModeClick}>{this.state.darkMode ? "Lights On" : "Dark Mode" }</Button>
           { this.state.darkMode ? <link rel="stylesheet" type="text/css" href="./semantic.slate.css" /> : null}
         </TopSegment>
-        <Divider horizontal>xendke.io</Divider>
+        <Divider horizontal>xendke.github.io</Divider>
         <Container>
           <Menu widths={3}>
             <Menu.Item name="resume" active={activePage === "resume"} onClick={this.handleItemClick} />
@@ -35,7 +35,7 @@ class App extends Component {
         </Container>
         <Divider/>
         <Container textAlign='center' style={{paddingBottom: 15, color: "grey"}}>
-          <a href="https://github.com/xendke/xendke-io" target="_blank" rel="noopener noreferrer" style={{color: "grey"}}> Made with React.js </a>. Hosted on a RaspberryPi
+          <a href="https://github.com/xendke/xendke-io" target="_blank" rel="noopener noreferrer" style={{color: "grey"}}> Made with React.js and ❤️</a>
         </Container>
       </div>
     );

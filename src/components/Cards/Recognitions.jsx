@@ -24,7 +24,7 @@ class Recognitions extends Component {
                         <Item.Description>
                         Maintained an average GPA above 3.5.
                         </Item.Description>
-                        <Item.Extra>2015 - Present</Item.Extra>
+                        <Item.Extra>2015 - 2018</Item.Extra>
                     </Item.Content>
                 </Item>
                 <Item>
